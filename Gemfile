@@ -3,7 +3,8 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.3'
 
 # Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
+#gem 'rails', :git => 'git://github.com/rails/rails.git'
+gem 'devise', :git => 'git://github.com/plataformatec/devise.git'
 
 gem 'mysql'
 
@@ -37,3 +38,8 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug'
+
+group :test, :development do
+  gem "rspec-rails", "~> 2.4"
+end
+
